@@ -1,0 +1,135 @@
+body {
+  height: 100vh;
+  background-color: black;
+  color: rgb(119, 216, 255);
+  margin: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h5 {
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+p {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 26px; 
+  color: white;
+  margin: 30px;
+  font-family: 'Diphylleia', serif;
+}
+
+.container {
+
+}
+
+.container .albums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container .albums .album {
+  width: 120px;
+  height: 120px;
+  margin: 4px;
+  border: 0px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.container .albums .album:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.container .albums .album img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+
+.container .logo {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container .logo img {
+  width: 100%;
+}
+
+.container .cover {
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container .cover img {
+  width: 100%;
+}
+
+.container .songs {
+  display: flex;
+  color: white;
+  font-family: 'Diphylleia', serif;
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.container .songs .song {
+  width: 100%;
+  height: 30px;
+  border-top: .5px solid white;
+  margin: 0px 6px;
+  padding: 3px 3px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.container .songs .song:nth-child(2) {
+  flex-grow: 10;
+}
+
+.container .songs:last-child .song {
+  border-bottom: .5px solid white;
+}
+
+a {
+  color: lightblue;
+}
